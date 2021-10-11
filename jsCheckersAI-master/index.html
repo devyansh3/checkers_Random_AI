@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="scripts/checkers-engine.js"></script>
+		<link rel="stylesheet" href="C:/Users/HP/OneDrive/Desktop/checkers/checkers.css">
+		<title>Checkers</title>
+	</head>
+	<body>
+		
+		<h1 style="color:azure;font-family: Verdana, Geneva, Tahoma, sans-serif;margin-left: 40%; font-size: 50px;">Checkers</h1>
+		<button onclick="startGame({x: 50, y: 50}, 100, boardCanvas);">Start New Game</button>
+		<button id="btnReplay" style="display:none;" onclick="replayAll({x: 0, y: 0}, 70, boardCanvas)">View Replay</button><br/><br/>
+		<svg id="checkersBoard" width="700" height="700" style="float:right; margin-right: 50px; margin-bottom: 50px;"></svg>
+		
+		<script type="text/javascript">
+			var boardCanvas = d3.select("#checkersBoard");
+			startGame({x: 0, y: 0}, 70, boardCanvas);
+		</script>	
+	</body>
+</html>

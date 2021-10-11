@@ -1,0 +1,165 @@
+    /* Checker Board layout     */
+* {
+    background:#082032;                                  /* #F1CA89;*/
+}
+.CheckersBoard{
+    width: 800px;
+    height: 800px;
+    margin-left: 5%;
+    margin-top: 3%;  
+    border-width: 2rem;
+    border-style: solid;  
+    border-color:black;
+    position: absolute;
+    z-index:1;
+}
+/* cell attributes */
+.d1{
+    width:100px;
+	height:100px;
+    background-color:#334756;
+	float:left;
+}
+
+.d2{
+    width:100px;
+	height:100px;
+    background-color:azure;
+	float:left;
+}
+
+.g1{
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* hide the display of the checker in the previous places before drag */
+.hide{
+    display: none;
+}
+
+/* for the pieces images */
+.pieces{
+    margin-top:15px;
+	margin-left:15px;
+	width: 4.5rem;
+	height: 4.5rem;
+	cursor: pointer;
+    z-index : 1;
+    background: none;
+}
+
+button:active{
+    border-width: 0.5rem;
+    border-color: darkblue;
+}
+
+button:visited{
+    background-color: red;
+}
+
+#Tab{
+    background-color:#F8F8F8;
+    height : 53rem;
+    width : 40rem;
+    position:relative;
+    left : 55%;
+    margin-top : 2%;
+    border-radius: 2rem;
+
+}
+
+#human{
+    height: 12rem;
+    width : 12rem;
+    position:absolute;
+    border-radius: 10px;
+    border-color: blue;
+    border-width: 3px;
+    margin : 10px;
+    left : 32%;
+    top : 5%;
+    z-index : 1;
+
+}
+
+#ai{
+    height: 12rem;
+    width : 12rem;
+    position:absolute;
+    border-radius: 10px;
+    border-color: blue;
+    border-width: 3px;
+    margin : 10px;
+    left : 31%;
+    top : 57%;
+
+
+}
+
+#changecolor{
+    width : 40rem;
+    height: 28rem;
+    background-color:#082032;
+    position:absolute;
+    border-radius: 2rem;
+    opacity : 90%;
+
+}
+
+.btn{
+    background-color: #F0A500; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+    border-radius: 20px;
+    cursor : pointer;
+  
+}
+
+#resetboard{
+    position: absolute;
+    padding: 15px 20px;
+    text-align: center;
+    display: inline;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#your_score{
+    font-size : 25px;
+    color: white;
+    position:absolute;
+    height: 5rem;
+    z-index :2;
+    background-color: transparent;
+    width: 20rem;
+    left : 35%;
+    top : 35%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+#opp_score{
+    font-size : 25px;
+    color: black;
+    position:absolute;
+    z-index :2;
+    height: 5rem;
+    width: 20rem;
+    background-color: transparent;
+    left : 34%;
+    top : 90%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
